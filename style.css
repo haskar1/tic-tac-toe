@@ -1,0 +1,64 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.player-turn-display {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+/* Game-board *************************/
+
+.game-board {
+    display: grid;
+    justify-content: center;
+    grid-template: repeat(3, 10rem) / repeat(3, 10rem);
+}
+
+.game-board > div {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: #C7FDFB;
+    border: 4px solid #B0B0B0;
+    font-size:10rem;
+}
+
+.game-board > div.X-hover {
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.game-board > div.O-hover {
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+/* Restart button *************************/
+
+.restart-button {
+    justify-self: center;
+    font-size: 2rem;
+    width: 6em;
+    height: 2em;
+    background-color: bisque;
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+
+.restart-button:hover {
+    font-weight: 700;
+    outline: orange solid 2px;
+    cursor: pointer;
+}
